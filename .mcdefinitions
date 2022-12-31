@@ -1,0 +1,11 @@
+## Used to test if a player is in a region
+tag=inRegion
+
+## If a player has this tag they cannot be damaged
+tag=protected
+tag=region-protected
+
+## Used to check if the pack is at the top
+tag=CHECK_PACK
+
+objective=STAFF_DB
