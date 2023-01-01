@@ -8,19 +8,19 @@ export const MOVEMENT_DISTANCE_THRESHOLD = 0.80;
  */
 export const MOVEMENT_CONSTANTS = {
   walk: {
-    velocity: 0.17 as const,
-    distance: 0.23 as const,
+    velocity: 0.17 as const, //0.17
+    distance: 0.23 as const, //0.23
   },
   run: {
-    velocity: 0.19 as const,
-    distance: 0.35 as const,
+    velocity: 0.19 as const, //0.19
+    distance: 0.35 as const, //0.35
   },
 };
 
 /**
  * The distance increase per speed effect increase
  */
-export const SPEED_EFFECT_INCREASE = 0.056;
+export const SPEED_EFFECT_INCREASE = 0.072; //0.056
 
 /**
  * if the distance is over this amount the system will automatically flag tp
@@ -30,4 +30,4 @@ export const ANTI_TP_DISTANCE_THRESHOLD = 10;
 /**
  * If your 
  */
-export const TAGS = ["gliding", "riding"];
+export const TAGS = ["gliding", "riding", "running", "jumping"];

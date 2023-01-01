@@ -4,7 +4,7 @@ import { getRole, kick } from "../../utils";
 new Command({
   name: "kick",
   description: "Kicks a player from the game",
-  requires: (player) => getRole(player) == "admin",
+  requires: (player) => ["admin", "moderator"].includes(getRole(player)),
 })
   .argument(new ArgumentTypes.player())
   .string("reason")

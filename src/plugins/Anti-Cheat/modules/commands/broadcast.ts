@@ -1,4 +1,4 @@
-import { Player, world } from "@minecraft/server";
+import { world } from "@minecraft/server";
 import { Command } from "../../../../lib/Command/Command.js";
 import { getRole } from "../../utils.js";
 
@@ -19,7 +19,8 @@ function broadcast(text: string) {
 new Command({
   name: "broadcast",
   description: "Broadcast System",
-  requires: (player) => getRole(player) == "admin",
+  aliases: ["bc"],
+  requires: (player) => ["admin", "moderator"].includes(getRole(player)),
 })
   .string('message')
   .executes((ctx, message) => {

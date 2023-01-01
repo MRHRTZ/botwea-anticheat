@@ -28,7 +28,7 @@ world.events.beforeChat.subscribe((data) => {
     if (role == "builder") color_code = "b";
     world.say({
       "rawtext":[
-          {"text":`§${color_code}§l[ §n${role.toUpperCase()}§r §${color_code}§l]§r §o§l${name}§r: ${data.message}§r`},
+          {"text":`§${color_code}§l[${role.toUpperCase()}§${color_code}§l]§r §3${name}§c: §f${data.message}§r`},
       ]
   });
   } else {

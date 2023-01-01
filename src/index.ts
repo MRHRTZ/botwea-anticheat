@@ -6,6 +6,7 @@ import {
 } from "@minecraft/server";
 import "./lib/Command/index";
 import "./lib/Chest GUI/index";
+// import "./lib/Schedule/index";
 import "./plugins/import";
 import "./database/index";
 

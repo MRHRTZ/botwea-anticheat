@@ -90,13 +90,12 @@ protection
       if (getRole(player) == "admin") return;
       if (player.dimension.id != old.dimension.id) return;
       if (player.getTags().some((tag) => TAGS.includes(tag))) return;
+      if (player.hasTag(`skip-movement-check`)) return player.removeTag(`skip-movement-check`);
       const distance = distanceBetween(player.location, old.location);
-      if (player.hasTag(`skip-movement-check`))
-        return player.removeTag(`skip-movement-check`);
       if (distance > ANTI_TP_DISTANCE_THRESHOLD) {
-        if (!config.tpCheck) return;
-        // Anti Tp.
-        flag(player, old);
+        // tp
+        if (!config.tpCheck) return 
+        flag(player, old); // Anti Tp.
       } else {
         // Anti speed/jet pack
         if (!isDistanceFlag(distance, player)) return;

@@ -15,4 +15,4 @@ import "./nuker";
 import "./spam";
 import "./unobtainable";
 import "./nbt";
-import "./movement";
+// import "./movement"; // TODO fix cannot run 
