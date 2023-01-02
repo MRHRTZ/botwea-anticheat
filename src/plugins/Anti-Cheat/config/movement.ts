@@ -30,4 +30,4 @@ export const ANTI_TP_DISTANCE_THRESHOLD = 10;
 /**
  * If your 
  */
-export const TAGS = ["gliding", "riding", "running", "jumping"];
+export const TAGS = ["gliding", "riding", "jumping"];
